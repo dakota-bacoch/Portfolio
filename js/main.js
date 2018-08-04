@@ -3,7 +3,7 @@ window.onload = function () {
     //tipped
 
 
-
+    
 
 
     //Jquery load delay
@@ -73,7 +73,7 @@ $(document).ready(function () {
 
     }, 2000);
 
-    $(".button").on("click", function () {
+    $("#button4").on("click", function () {
         anime({
             targets: ".button",
             translateY: 180,
@@ -82,6 +82,12 @@ $(document).ready(function () {
         $("#name").fadeOut("slow", function () {
             // Animation complete.
         });
+        setTimeout(function () {
+            $("#name").html('<div id="test"></div>')
+
+            $("#name").fadeIn("slow", function () {
+            });
+        }, 1000);
     });
 
 });
